@@ -40,7 +40,7 @@ module.exports = function(grunt) {
 
           if (option.isPath){
             var relativeTo = path.dirname(grunt.file.expand(f)[0]);
-            vals = vals.map(function(val){
+            vals = vals.map(function(i, val){
               return path.join(relativeTo,val);
             });
           }
@@ -52,7 +52,7 @@ module.exports = function(grunt) {
       });
     }
 
-    if (options.remove){
+    if (options.remove) {
       options.remove = toArray(options.remove);
       options.remove.forEach(function(option) {
         $(option).remove();

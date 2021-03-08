@@ -7,9 +7,6 @@
     "url": "https://github.com/cgross/grunt-dom-munger/issues"
   },
   "bundleDependencies": false,
-  "dependencies": {
-    "cheerio": "~0.12.3"
-  },
   "deprecated": false,
   "description": "Read and manipulate HTML with CSS selectors. Ex. read <script> tags from your html.  Remove nodes, add nodes, and more.",
   "devDependencies": {
@@ -48,5 +45,8 @@
   "scripts": {
     "test": "grunt test"
   },
-  "version": "3.5.0"
+  "version": "3.5.0",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.5"
+  }
 }
