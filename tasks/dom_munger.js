@@ -30,9 +30,9 @@ module.exports = function(grunt) {
           grunt.log.error('Read config missing selector, attribute, and/or writeto options');
         } else {
 
-          var vals = $(option.selector).map(function(i,elem){
+          var vals = $(option.selector).map(function(i, elem){
             return $(elem).attr(option.attribute);
-          });
+          }).toArray();
 
           vals = vals.filter(function(item){
             return item !== undefined;
@@ -40,13 +40,12 @@ module.exports = function(grunt) {
 
           if (option.isPath){
             var relativeTo = path.dirname(grunt.file.expand(f)[0]);
-            vals = vals.map(function(i, val){
-              return path.join(relativeTo,val);
+            vals = vals.map(function(val){
+              return path.join(relativeTo, val);
             });
           }
-
           grunt.config(['dom_munger','data',option.writeto],vals);
-          grunt.log.writeln('Wrote ' + (option.selector + '.' + option.attribute).cyan + ' to ' + ('dom_munger.data.'+option.writeto).cyan);
+          grunt.log.writeln('Wrote ' + (option.selector + '[' + option.attribute).cyan + '] to ' + ('dom_munger.data.'+option.writeto).cyan);
         }
 
       });
