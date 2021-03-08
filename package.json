@@ -1,25 +1,4 @@
 {
-  "_from": "git+https://github.com/belykh/grunt-dom-munger.git",
-  "_id": "grunt-dom-munger@3.4.0",
-  "_inBundle": false,
-  "_integrity": "",
-  "_location": "/grunt-dom-munger",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "git",
-    "raw": "git+https://github.com/belykh/grunt-dom-munger.git",
-    "rawSpec": "git+https://github.com/belykh/grunt-dom-munger.git",
-    "saveSpec": "git+https://github.com/belykh/grunt-dom-munger.git",
-    "fetchSpec": "https://github.com/belykh/grunt-dom-munger.git",
-    "gitCommittish": null
-  },
-  "_requiredBy": [
-    "#DEV:/",
-    "#USER"
-  ],
-  "_resolved": "git+https://github.com/belykh/grunt-dom-munger.git#2b55399a5987806ada64496cb0055c5268e02707",
-  "_spec": "git+https://github.com/belykh/grunt-dom-munger.git",
-  "_where": "/Users/andrey.vyrvich/Documents/Projects/webclient/static/app",
   "author": {
     "name": "Chris Gross",
     "email": "schtoo@schtoo.com"
@@ -34,12 +13,12 @@
   "deprecated": false,
   "description": "Read and manipulate HTML with CSS selectors. Ex. read <script> tags from your html.  Remove nodes, add nodes, and more.",
   "devDependencies": {
-    "grunt": "~0.4.1",
-    "grunt-contrib-clean": "~0.4.0",
-    "grunt-contrib-concat": "~0.1.3",
-    "grunt-contrib-jshint": "~0.1.1",
-    "grunt-contrib-nodeunit": "~0.3.0",
-    "grunt-contrib-uglify": "~0.2.0"
+    "grunt": "1.3.0",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-jshint": "^3.0.0",
+    "grunt-contrib-nodeunit": "^1.0.0",
+    "grunt-contrib-uglify": "^5.0.0"
   },
   "engines": {
     "node": ">= 0.8.0"
@@ -60,7 +39,7 @@
   "main": "Gruntfile.js",
   "name": "grunt-dom-munger",
   "peerDependencies": {
-    "grunt": "~0.4.1"
+    "grunt": "^1.3.0"
   },
   "repository": {
     "type": "git",
@@ -69,5 +48,5 @@
   "scripts": {
     "test": "grunt test"
   },
-  "version": "3.4.0"
+  "version": "3.5.0"
 }
